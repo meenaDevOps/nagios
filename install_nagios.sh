@@ -63,7 +63,7 @@ chown -R nagios:nagios /usr/local/nagios/linexec/eventhandlers
 /etc/init.d/nagios start
 /etc/init.d/httpd start
 if [ ! -f "" ]; then
- echo "nagiosadmin:haYhoVd04gOwQ" >/usr/local/nagios/etc/htpasswd.users
+ echo "nagiosadmin:nagiosadmin" >/usr/local/nagios/etc/htpasswd.users
 fi
 cd ../nagios-plugins-2.3.3
 ./configure --with-nagios-user=nagios --with-nagios-group=nagios
